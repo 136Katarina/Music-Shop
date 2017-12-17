@@ -2,7 +2,7 @@ package instruments;
 
 
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument {
     int numberofStrings;
 
     public Guitar(int numberofStrings, String material, String colour, String type, double priceSell, double priceBuy) {

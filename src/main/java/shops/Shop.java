@@ -29,6 +29,16 @@ public class Shop {
         this.stock.remove(i);
     }
 
+    public double total(){
+        double total = 0.0;
+        for (ISell item : stock) {
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
+
+
+
 
 
 }
